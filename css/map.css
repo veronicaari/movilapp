@@ -1,0 +1,178 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    height: 100%;
+    width: 100vw;
+} 
+
+#mapdiv {
+    height: 100vh;
+    width: 100vw;
+}
+
+.mrg-floatstop{
+	clear:both;
+}
+
+/* este fragmento obliga a que los controles Easy Button se muestren de un lado al otro */
+.leaflet-bar.easy-button-container.leaflet-control{
+	float: none;
+	clear:both;
+	display :inline-block;
+}
+
+/*iconos de localizacion------------*/
+
+.mrg-fg-red{color: #ff2a2a;}
+.mrg-bg-blue{background-color: #1e553b;}
+
+.mrg-button-group{
+	text-align: center;
+}
+
+/* icono del climate map*/
+.mrg-button {
+	font-size: 18px;
+	background-color: #11151c;
+	border: none;
+	margin: 2px 1px;
+	color: rgb(10, 11, 11);
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;	
+	border-radius: 2px;
+
+}
+
+/* icono del seach*/
+.mrg-button-md {
+	font-size: 10px;
+	background-color: #9a9f9f;
+	border: none;
+	margin: 2px 1px;
+	color: rgb(146, 160, 168);
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;	
+	border-radius: 2px;
+
+}
+
+/* cuadro buscador*/
+
+.mrg-button  a:link, a:visited {
+  padding: 6px 6px;
+  color: white;
+}
+
+.mrg-display-latlon{
+	font-size: 13px;
+	font-family: Arial;
+}
+
+/* cuadro  del seach
+.info { 
+ padding: 6px 8px;
+ font: 14px/16px Arial, Helvetica, sans-serif;
+ background: rgba(146, 159, 224, 0.8);
+ border-radius: 5px;
+ } .info h4 { margin: 0 0 5px;
+ color: #01060b;
+}*/
+
+.poly{ 
+    stroke: rgba(247, 10, 10, 0.942);
+    fill: none;
+    stroke-dasharray: 3,3; 
+    stroke-width: 3;  
+    }
+
+.CC{
+    stroke: #de2828;
+    fill: #ee0707d5;
+    stroke-width: 2;
+}
+
+.urbano{
+    stroke: #4a05f9;
+    fill: #4ca3e9;
+    stroke-width: 2;
+  }
+
+.map-title { 
+    transform: translate(-50%,20%);
+    position: fixed !important;
+    left: 50%;
+    text-align: center;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    background: rgba(15, 179, 239, 0.75);
+    font-weight: bold;
+    font-size: 28px;
+  }
+
+
+h1{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    background: rgba(255,255,255,0.75);
+    color: rgba(122,184,0);
+    -webkit-text-stroke: 1px rgb(23, 83, 215);
+
+}
+
+h2{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    background: rgba(255, 255, 255, 0.374);
+    color: rgba(122,184,0);
+    -webkit-text-stroke: 1px rgb(23, 83, 215);
+
+}
+
+
+
+.container{
+    position: absolute;
+    z-index: 2000;
+    bottom: 0px;
+    margin: 0;
+    right: 0px;
+    font-family: Tahoma;
+    background: linear-gradient( -55deg, #9ea1ae, #8db6e8);
+    border-radius: 7%;
+    box-shadow: 0 1px 3px rgba(6, 106, 238, 0.579);
+    padding: 0px;
+}
+
+
+.header {
+    font-size: 0.1rem;
+    color: #7f7f7f;
+  }
+
+.title {
+    font-size: 1.1rem;
+    color: #0066ff;
+    font-weight: bold;
+    font-family:cursive;
+  }
+
+p {
+    font-size: 0.7rem;
+    color: #1d4596;
+    font-weight: bold;
+    font-family:cursive;
+  }
+
+
