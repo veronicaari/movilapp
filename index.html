@@ -1,0 +1,93 @@
+<!-- Projeto Mapa de reconocimiento catastral
+veronicaari@outlook.com
+Aplicativo Desde 2023
+-->
+
+<!DOCTYPE html>
+<html>
+		<head>
+			<meta charset="utf-8">
+			<!--
+			Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+				https://cordova.apache.org/docs/en/latest/
+			Some notes:
+				* https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+				* Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+					* Enable inline JS: add 'unsafe-inline' to default-src
+			-->
+
+			<!-- Custom styles -->
+
+			<link rel="stylesheet" type="text/css" href="css/map.css" />
+			<script src="js/jquery.min.js" ></script>
+
+		</head>
+		<body >
+
+			<div class="app"></div>
+				<script src="leaflet/leaflet.js" ></script>
+				<link href="leaflet/leaflet.css" rel="stylesheet" type="text/css"/>	
+				
+				<!-- Font Awesome's -->
+				<script src="js/kit.fontawesome.com_bb2d4f0dd8.js"></script>
+				<script src="plugins/leaflet-providers.js"></script>
+				<script src="plugins/locatecontrol/L.Control.Locate.min.js"></script>
+				<link href="plugins/locatecontrol/L.Control.Locate.css" rel="stylesheet" type="text/css"/>
+
+				<link rel="stylesheet" href="plugins/Leaflet.PolylineMeasure.css" />
+				<script src="plugins/Leaflet.PolylineMeasure.js"></script>		
+				<link rel="stylesheet" href="plugins/Control.Geocoder.css" />
+				<script src="plugins/Control.Geocoder.js"></script>	
+				<link rel="stylesheet" href="plugins/leaflet-side-by-side/layout.css" />
+				<script src="plugins/leaflet-side-by-side/leaflet-side-by-side.min.js"></script>
+				<link rel="stylesheet" href="plugins/iconlayers/iconlayers.css" />
+				<script src="plugins/iconlayers/iconlayers.js"></script>	
+				
+				<link rel="stylesheet" href="plugins/easy-button.css">
+				<script src="plugins/easy-button.js"></script>
+
+				<script src="plugins/leaflet-hash.js"></script>	
+				<script src="plugins/leaflet.edgescalebar.js"></script>		
+				<script src="plugins/leaflet-omnivore.min.js"></script>	
+
+				<link rel="stylesheet" href="css/leaflet-measure.css">
+				<script src="plugins/leaflet-measure.js"></script>
+
+				<!-- Leaflet.awesome-markers plugin v2.0 -->
+				<link rel="stylesheet" href="plugins/awesome-markers/leaflet.awesome-markers.css" />
+				<script src="plugins/awesome-markers/leaflet.awesome-markers.js"></script>	
+
+				<!-- Leaflet.MarkerCluster plugin v1.4.1 -->
+				<link rel="stylesheet" href="plugins/markercluster/MarkerCluster.css" />
+				<link rel="stylesheet" href="plugins/markercluster/MarkerCluster.Default.css" />
+				<script src="plugins/markercluster/leaflet.markercluster.js"></script>					
+
+				<!-- https://github.com/zostera/leaflet-legend -->
+				<script src="plugins/leaflet-legend/leaflet-legend.js"></script>
+				
+				<!-- https://github.com/ghybs/Leaflet.FeatureGroup.SubGroup -->
+				<script language="javascript" type="text/javascript" src="plugins/subgroup.js"></script>	
+				<script language="javascript" type="text/javascript" src="js/functions.js"></script>
+
+				<script src="plugins/leaflet.edgescalebar.js"></script>	
+				
+				<title>CATASTRO_VERONICA_ARI</title>
+	
+			</div>			
+
+		<main>
+				<script src="cordova.js"></script>
+				<div id='mapdiv' class="" ></div> 
+				<script language="javascript" type="text/javascript" src='js/initlang.js'></script>   	
+				<script language="javascript" type="text/javascript" src='js/initmap.js'></script>   	
+
+				<!-- datos de json -->
+				<div class="container">
+				  
+				</div>
+				
+			
+			</div>
+		</main>
+		</body>
+</html>
